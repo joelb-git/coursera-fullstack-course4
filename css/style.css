@@ -8,75 +8,59 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-  text-align: center;
-}
-
 #heading {  
   text-align: center;
   font-size: 175%;
 }
 
-#container {
-  margin: 16px;
-}
-
+/* could use div div div, but a name seems cleaner */
 .col {
   position: relative;
-  xbackground-color: gray;
+
 }
 
-/* padded paragraph */
-.pad {
+.content {
   background-color: gray;
-  xpadding-top: 32px;
-  padding: 32px 16px 16px 16px;
+  /* In Chrome, if I add non-zero bottom padding, the break at 768 doesn't
+    kick in.  But it does in Firefox!  The mockups don't seem to have padding
+    on the bottom, so I'll leave it at 0, though I think some padding looks
+    better.  Another quirk at the 768 break - Chrome does break there, but
+    it says it goes from 768 to 752, though I don't observe this jump visually.
+    Firefox does show the values between 768 and 752.  Hmm.
+  */
+  padding: 32px 16px 0px 16px;
   margin: 8px;
   border: 1px solid black;
-
 }
 
-/*.row:nth-child(2) {
-  background-color: blue;
-}
-*/
-
-#p1 {
-  background-color: #5F9EA0;
+.section_title {
   text-align: center;
-  width: 100px;
+  width: 120px;
   position: absolute;
   top: 8px;
   right: 8px;
   font-size: 125%;
   border: 1px solid black;
+}
+
+#p1 {
+  background-color: #5F9EA0;
 }
 #p2 {
   background-color: #A52A2A;
   color: white;
-  text-align: center;
-  width: 100px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  font-size: 125%;
-  border: 1px solid black;
 }
 #p3 {
   background-color: #DEB887;
-  text-align: center;
-  width: 100px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  font-size: 125%;
-  border: 1px solid black;
 }
 
-/* Simple Responsive Framework. */
+/* Simple Responsive Framework - adjusted from Lecture 24 */
+#container {
+  margin: 0 8px 0 8px;
+}
+
 .row {
   width: 100%;
-  xpadding: 20px;    /* TODO: not quite right */
 }
 
 /* Desktop */
