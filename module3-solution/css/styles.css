@@ -53,9 +53,13 @@ li {
 
 #chicken-content {
 	background-color: gray;
-	margin: 10px 40px 40px 40px;
 }
 
 #chicken-content>div {
 	margin: 10px 30px 10px 30px;
+}
+
+/* looked and behaved fine with container-fluid without col-xs-12, but grading requires this */
+.row {
+	margin: 20px;
 }
