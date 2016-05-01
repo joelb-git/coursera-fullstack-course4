@@ -1,0 +1,61 @@
+body {
+	border: solid;
+}
+
+header .container-fluid {
+	background-color: gray;
+	border-bottom: solid;
+	border-radius: 0;
+}
+
+nav#header-nav.navbar.navbar-default {
+	background-color: white;
+	border: none;
+}
+
+#brand-text {
+	color: black;
+	font-size: 2.2em;
+	font-weight: bold;
+	margin: 12px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	height: 6px;
+	width: 32px;
+	background-color: black;
+}
+
+/* still having trouble with extra gray on top and bottom, so this isn't perfect */
+/* issue with trying to set color on #collapsable-nave? */
+ul {
+	background-color: white;
+}
+
+li {
+	font-size: 1.4em;
+	border-top: solid;
+}
+
+#menu-header {
+	font-size: 2.0em;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+#chicken-header {
+	color: black;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+#chicken-content {
+	background-color: gray;
+	margin: 10px 40px 40px 40px;
+}
+
+#chicken-content>div {
+	margin: 10px 30px 10px 30px;
+}
